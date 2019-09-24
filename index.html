@@ -6,7 +6,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Relevo Venezuela</title>
-
+	<script type="text/javascript">
+		window.addEventListener('load', function () {
+			var preloader = document.getElementById('preloader');
+			var wrapper = document.getElementById('wrapper');
+			var preloadID = window.setInterval(function () {
+				document.body.removeChild(preloader);
+				wrapper.classList.add('display-show');
+				clearInterval(preloadID);
+			}, 500);
+		});
+	</script>
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
 	<!-- Bootstrap -->
@@ -15,12 +25,20 @@
 	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
 	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
 	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/f88c6d2645.js"></script>
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+
+	<div id="preloader">
+
+		<div class="center-xy">
+			<img src="img/logos/loading.gif" alt="Plan a loading GIF">
+		</div>
+	</div>
+
 	<!-- Header -->
 	<header id="home">
 		<!-- Background Image -->
@@ -30,7 +48,7 @@
 		<!-- /Background Image -->
 
 		<!-- Nav -->
-		<nav id="nav" class="navbar nav-transparent">
+		<nav id="nav" class="navbar nav-transparent nav-transparent2">
 			<div class="container">
 
 				<div class="navbar-header">
@@ -54,12 +72,8 @@
 				<ul class="main-nav nav navbar-nav navbar-right">
 					<li><a href="index.html">Inicio</a></li>
 					<li><a href="galeria.html">Galería</a></li>
-					<li class="has-dropdown"><a href="#">Sobre Relevo</a>
-						<ul class="dropdown">
-							<li><a href="quienes.html">¿Quienes Somos?</a></li>
-							<li><a href="testimonio.html">Testimonios</a></li>
-						</ul>
-					</li>
+					<li><a href="quienes.html">¿Quienes Somos?</a></li>
+					<li><a href="testimonio.html">Testimonios</a></li>
 					<li><a href="apoyanos.html">Apóyanos</a></li>
 					<li><a href="contacto.html">Contacto</a></li>
 				</ul>
@@ -144,7 +158,10 @@
                         <li class="timeline-inverted">
                           <div class="timeline-image">
                             <h4>¡Meta
-                              <br>Lograda!</h4>
+							  <br>Lograda!
+								<br>
+							  <i class="fa fa-trophy"></i>
+							</h4>
                           </div>
                         </li>
                       </ul>
@@ -172,21 +189,17 @@
 				<!-- Testimonial slider -->
 				<div class="col-md-10 col-md-offset-1">
 					<div id="testimonial-slider" class="owl-carousel owl-theme">
-
-						<!-- testimonial -->
 						<div class="testimonial">
-								<div class="testimonial-meta">
-									<img src="./img/perso2.jpg" alt="">
-									<h3 class="white-text">Scarlet Vargas</h3>
-									<span>Relevista 2014</span>
-								</div>
-								<p class="white-text">“A veces piensas que eres una más en el entorno y no te das cuenta 
-									que hay gente que te está siguiendo que quiere ser como tú, te motiva porque te das 
-									cuenta que eres un ejemplo”</p>
+							<div class="testimonial-meta">
+								<img src="./img/testimonio/scarlett1.jpg" alt="">
+								<h3 class="white-text">Scarlet Vargas</h3>
+								<span>Profesora en Relevo</span>
 							</div>
-							<!-- /testimonial -->
-
-						<!-- testimonial -->
+							<p class="white-text">“A veces piensas que eres una más en el entorno y no te das cuenta 
+								que hay gente que te está siguiendo que quiere ser como tú, te motiva porque te das 
+								cuenta que eres un ejemplo”</p>
+						</div>
+				
 						<div class="testimonial">
 							<div class="testimonial-meta">
 								<img src="./img/perso1.jpg" alt="">
@@ -196,9 +209,27 @@
 							<p class="white-text">“En mi casa mi mamá es una ama de casa y mi papá un plomero, no es muy 
 								vasto los conocimientos y yo quiero hacer la diferencia, quiero sacar adelante la familia”</p>
 						</div>
-						<!-- /testimonial -->
-
+			
+						<div class="testimonial">
+							<div class="testimonial-meta">
+								<img src="./img/testimonio/abraham1.jpg" alt="">
+								<h3 class="white-text">Abraham Castillo</h3>
+								<span>Relevista 2015 - 2019</span>
+							</div>
+							<p class="white-text">“Yo sólo necesito la oportunidad”</p>
+						</div>
 						
+						<div class="testimonial">
+							<div class="testimonial-meta">
+								<img src="./img/perso2.jpg" alt="">
+								<h3 class="white-text">Felix Arias</h3>
+								<span>Profesor en Relevo</span>
+							</div>
+							<p class="white-text">“Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+								Pariatur cupiditate nulla magnam sed dolores tenetur molestiae! Labore 
+								quidem amet doloremque excepturi ea debitis molestias fugit architecto, 
+								sint beatae similique est?”</p>
+						</div>
 
 					</div>
 				</div>
@@ -232,7 +263,7 @@
 
 					<!-- footer follow -->
 					<ul class="footer-follow">
-						<li><a href="https://www.instagram.com/relevove/"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://www.instagram.com/relevove/"><i class="fab fa-instagram"></i></a></li>
 					</ul>
 					<!-- /footer follow -->
 
@@ -256,17 +287,6 @@
 	<!-- Back to top -->
 	<div id="back-to-top"></div>
 	<!-- /Back to top -->
-
-	<!-- Preloader -->
-	<div id="preloader">
-		<div class="preloader">
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</div>
-	<!-- /Preloader -->
 
 	<!-- jQuery Plugins -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
