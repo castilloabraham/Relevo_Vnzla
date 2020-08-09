@@ -7,16 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="img/logos/icon.png">
 	<title>Relevo Venezuela</title>
-	
+
 	<script type="text/javascript">
 		window.addEventListener('load', function () {
-    		var preloader = document.getElementById('preloader');
-    		var wrapper = document.getElementById('wrapper');
-    		var preloadID = window.setInterval(function () {
-    	    document.body.removeChild(preloader);
-    	    wrapper.classList.add('display-show');
-    	    clearInterval(preloadID);
-    		}, 500);
+			var preloader = document.getElementById('preloader');
+			var wrapper = document.getElementById('wrapper');
+			var preloadID = window.setInterval(function () {
+				document.body.removeChild(preloader);
+				wrapper.classList.add('display-show');
+				clearInterval(preloadID);
+			}, 500);
 		});
 	</script>
 	<!-- Google font -->
@@ -41,7 +41,7 @@
 		</div>
 	</div>
 
-	<header id="testim">
+	<header id="header-comun">
 		<!-- Background Image -->
 		<div class="bg-img" style="background-image: url('./img/background/testimonio.jpg');">
 			<div class="overlay"></div>
@@ -84,14 +84,11 @@
 		</nav>
 		<!-- /Nav -->
 
-		<div class="header-testim">
+		<div class="header-comun">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1">
-						<p class="info-testim">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-							Ratione velit delectus culpa enim provident, est doloremque 
-							odio quis veritatis ab at fugit corporis quibusdam cupiditate, 
-							corrupti soluta similique debitis reiciendis.</p>
+					<div class="section-header text-center">
+						<h1 class="title">Testimonios</h1>
 					</div>
 				</div>
 			</div>
@@ -100,100 +97,123 @@
 
 	<section class="section-testimonios">
 		<div class="container">
-		<div class="row">
-			<div class="section-header text-center">
-				<h2 class="title">Testimonios</h2>
-			</div>
-		</div>
 
-		<div class="row testimonio">
-			<div class="col-sm-3 col-md-3 col-lg-3 foto-test">
-				<img class="img-fluid rounded-circle" src="img/testimonio/scarlett1.jpg" alt="">
-			</div>
-			<div class="col-sm-9 col-md-9 col-lg-9 text-testimonio">
-				<h2>Scarlet Vegas</h2>
-				<h4>Profesora en Relevo</h4>
-			  	<p>“A veces piensas que eres una más en el entorno y no te das cuenta 
-					que hay gente que te está siguiendo que quiere ser como tú, te motiva porque te das 
-					cuenta que eres un ejemplo”</p>
-				<div class="col-md-12 text-center">
-					<button class="btn btn-portf" data-toggle="collapse" data-target="#test1"><i class="fas fa-plus"></i></button>
+			<div class="row testimonio">
+				<div class="col-sm-3 col-md-3 col-lg-3 foto-test">
+					<img class="img-fluid rounded-circle" src="img/testimonio/scarlett1.jpg" alt="">
 				</div>
-				<ul id="test1" class="collapse extra">
-					<li><i class="fas fa-paper-plane"></i>Estudiante de Administración de Empresas, UNE.</li>
-					<li><i class="fas fa-paper-plane"></i>Graduada de la U.E.P Mano Amiga "La Montaña".</li>
-					<li><i class="fas fa-paper-plane"></i>Relevista 2014</li>
-				</ul>
-			</div>
-		</div>
-		<div class="row testimonio">
-			<div class="col-sm-4 col-md-4 col-lg-4 visible-xs-block foto-test">
-				<img class="img-fluid rounded-circle" src="img/prueba.jpg" alt="">
-			</div>
-			<div class="col-sm-8 col-md-8 col-lg-8 text-testimonio">
-				<h2>Felix Arias</h2>
-				<h4>Profesor en Relevo</h4>
-			  	<p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur cupiditate nulla magnam 
-					  sed dolores tenetur molestiae! Labore quidem amet doloremque excepturi ea debitis 
-					  molestias fugit architecto, sint beatae similique est?”</p>
-				<div class="col-md-12 text-center">
-					<button class="btn btn-portf" data-toggle="collapse" data-target="#test2"><i class="fas fa-plus"></i></button>
+				<div class="col-sm-9 col-md-9 col-lg-9 text-testimonio">
+					<h2>Scarlet Vegas</h2>
+					<h4>Profesora en Relevo</h4>
+					<p>“A veces piensas que eres una más en el entorno y no te das cuenta
+						que hay gente que te está siguiendo que quiere ser como tú, te motiva porque te das
+						cuenta que eres un ejemplo”</p>
+					<div class="col-md-12 text-center">
+						<button class="btn btn-portf" data-toggle="collapse" data-target="#test1"><i
+								class="fas fa-plus"></i></button>
+					</div>
+					<ul id="test1" class="collapse extra">
+						<li><i class="fas fa-paper-plane"></i>Estudiante de Administración de Empresas, UNE.</li>
+						<li><i class="fas fa-paper-plane"></i>Graduada de la U.E.P Mano Amiga "La Montaña".</li>
+						<li><i class="fas fa-paper-plane"></i>Profesor en Relevo.</li>
+						<li><i class="fas fa-paper-plane"></i>Relevista 2014.</li>
+					</ul>
 				</div>
-				<ul id="test2" class="collapse extra">
-					<li><i class="fas fa-paper-plane"></i>Estudiante de Contabilidad, USM.</li>
-					<li><i class="fas fa-paper-plane"></i>Graduado de la U.E.P Mano Amiga "La Montaña".</li>
-					<li><i class="fas fa-paper-plane"></i>Profesor en Relevo.</li>
-				</ul>
 			</div>
-			<div class="col-sm-4 col-md-4 col-lg-4 hidden-xs">
-				<img class="img-fluid rounded-circle" src="img/prueba.jpg" alt="">
-			</div>
-		</div>
-		<div class="row testimonio">
-			<div class="col-sm-3 col-md-3 col-lg-3 foto-test">
-				<img class="img-fluid rounded-circle" src="img/testimonio/abraham1.jpg" alt="">
-			</div>
-			<div class="col-sm-9 col-md-9 col-lg-9 text-testimonio">
-				  <h2>Abraham Castillo</h2>
-				  <h4>Relevista 2015 - 2019</h4>
-				  <p>“Yo sólo necesito la oportunidad”</p>
-				<div class="col-md-12 text-center">
-				  <button class="btn btn-portf" data-toggle="collapse" data-target="#test3"><i class="fas fa-plus"></i></button>
-				</div>
-				<ul id="test3" class="collapse extra">
-				  <li><i class="fas fa-paper-plane"></i>Estudiante de Ing. de Sistemas, UNIMET.</li>
-				  <li><i class="fas fa-paper-plane"></i>Graduado de la U.E.P Mano Amiga "La Montaña".</li>
-				  <li><i class="fas fa-paper-plane"></i>Graduado de Full Stack Web Development 4Geeks Venezuela.</li>
-				  <li><i class="fas fa-paper-plane"></i>Monitor de ajedrez.</li>
-				  <li><i class="fas fa-paper-plane"></i>Relevista.</li>
-				</ul>
-			</div>
-		</div>
-		  <div class="row testimonio">
-			<div class="col-sm-4 col-md-4 col-lg-4 visible-xs-block foto-test">
-				<img class="img-fluid rounded-circle" src="img/prueba.jpg" alt="">
-			</div>
-			<div class="col-sm-8 col-md-8 col-lg-8 text-testimonio">
-				<h2>Moisés Oliveros</h2>
-				<h4>Relevista 2016-Presente</h4>
-				<p>“En mi casa mi mamá es una ama de casa y mi papá un plomero, no es muy 
-					vasto los conocimientos y yo quiero hacer la diferencia, quiero sacar 
-					adelante la familia”</p>
-				<div class="col-md-12 text-center">
-					<button class="btn btn-portf" data-toggle="collapse" data-target="#test4"><i class="fas fa-plus"></i></button>
-				</div>
-				<ul id="test4" class="collapse extra">
-					<li><i class="fas fa-paper-plane"></i>Monitor de ajedrez.</li>
-					<li><i class="fas fa-paper-plane"></i>Graduado de la U.E Maria Auxiliadora.</li>
-					<li><i class="fas fa-paper-plane"></i>Relevista</li>
-				</ul>
-			</div>
-			<div class="col-sm-4 col-md-4 col-lg-4 hidden-xs">
+			<div class="row testimonio">
+				<div class="col-sm-3 col-md-3 col-lg-3 visible-xs-block foto-test">
 					<img class="img-fluid rounded-circle" src="img/prueba.jpg" alt="">
 				</div>
-		  	</div>
+				<div class="col-sm-9 col-md-9 col-lg-9 text-testimonio">
+					<h2>Felix Arias</h2>
+					<h4>Profesor en Relevo</h4>
+					<p>“Los grandes logros de cualquier persona generalmente dependen de muchas manos,
+						corazones y mentes”</p>
+					<div class="col-md-12 text-center">
+						<button class="btn btn-portf" data-toggle="collapse" data-target="#test2"><i
+								class="fas fa-plus"></i></button>
+					</div>
+					<ul id="test2" class="collapse extra">
+						<li><i class="fas fa-paper-plane"></i>Estudiante de Administración de Empresas, UNE.</li>
+						<li><i class="fas fa-paper-plane"></i>Graduado de la U.E.P Mano Amiga "La Montaña".</li>
+						<li><i class="fas fa-paper-plane"></i>Profesor en Relevo.</li>
+						<li><i class="fas fa-paper-plane"></i>Relevista 2014.</li>
+					</ul>
+				</div>
+				<div class="col-sm-3 col-md-3 col-lg-3 hidden-xs">
+					<img class="img-fluid rounded-circle" src="img/prueba.jpg" alt="">
+				</div>
+			</div>
+			<div class="row testimonio">
+				<div class="col-sm-3 col-md-3 col-lg-3 foto-test">
+					<img class="img-fluid rounded-circle" src="img/prueba.jpg" alt="">
+				</div>
+				<div class="col-sm-9 col-md-9 col-lg-9 text-testimonio">
+					<h2>Willy García</h2>
+					<h4>Profesor en Relevo</h4>
+					<p>“Aunque el entorno  nos condiciona nosotros también podemos formar parte del cambio. 
+						En el enseñar pude aprender que cada mirada a esos niños es una oportunidad del futuro”</p>
+					<div class="col-md-12 text-center">
+						<button class="btn btn-portf" data-toggle="collapse" data-target="#test3"><i
+								class="fas fa-plus"></i></button>
+					</div>
+					<ul id="test3" class="collapse extra">
+						<li><i class="fas fa-paper-plane"></i>Estudiante de Letras, UCAB.</li>
+						<li><i class="fas fa-paper-plane"></i>Graduado de la U.E.P Mano Amiga "La Montaña".</li>
+						<li><i class="fas fa-paper-plane"></i>Profesor en Relevo.</li>
+						<li><i class="fas fa-paper-plane"></i>Relevista 2014.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row testimonio">
+				<div class="col-sm-3 col-md-3 col-lg-3 visible-xs-block foto-test">
+					<img class="img-fluid rounded-circle" src="img/prueba.jpg" alt="">
+				</div>
+				<div class="col-sm-9 col-md-9 col-lg-9 text-testimonio">
+					<h2>Moisés Oliveros</h2>
+					<h4>Relevista 2016 - Presente</h4>
+					<p>“En mi casa mi mamá es una ama de casa y mi papá un plomero, no es muy
+						vasto los conocimientos y yo quiero hacer la diferencia, quiero sacar
+						adelante la familia”</p>
+					<div class="col-md-12 text-center">
+						<button class="btn btn-portf" data-toggle="collapse" data-target="#test4"><i
+								class="fas fa-plus"></i></button>
+					</div>
+					<ul id="test4" class="collapse extra">
+						<li><i class="fas fa-paper-plane"></i>Monitor de ajedrez.</li>
+						<li><i class="fas fa-paper-plane"></i>Graduado de la U.E Maria Auxiliadora.</li>
+						<li><i class="fas fa-paper-plane"></i>Relevista</li>
+					</ul>
+				</div>
+				<div class="col-sm-3 col-md-3 col-lg-3 hidden-xs">
+					<img class="img-fluid rounded-circle" src="img/prueba.jpg" alt="">
+				</div>
+			</div>
+			<div class="row testimonio">
+				<div class="col-sm-3 col-md-3 col-lg-3 foto-test">
+					<img class="img-fluid rounded-circle" src="img/testimonio/abraham1.jpg" alt="">
+				</div>
+				<div class="col-sm-9 col-md-9 col-lg-9 text-testimonio">
+					<h2>Abraham Castillo</h2>
+					<h4>Relevista 2015 - 2019</h4>
+					<p>“Yo sólo necesito la oportunidad”</p>
+					<div class="col-md-12 text-center">
+						<button class="btn btn-portf" data-toggle="collapse" data-target="#test5"><i
+								class="fas fa-plus"></i></button>
+					</div>
+					<ul id="test5" class="collapse extra">
+						<li><i class="fas fa-paper-plane"></i>Estudiante de Ing. de Sistemas, UNIMET.</li>
+						<li><i class="fas fa-paper-plane"></i>Graduado de la U.E.P Mano Amiga "La Montaña".</li>
+						<li><i class="fas fa-paper-plane"></i>Graduado de Full Stack Web Development 4Geeks Venezuela.
+						</li>
+						<li><i class="fas fa-paper-plane"></i>Monitor de ajedrez.</li>
+						<li><i class="fas fa-paper-plane"></i>Relevista 2019.</li>
+						<li><i class="fas fa-paper-plane"></i>Creador de esta página web.</li>
+					</ul>
+				</div>
+			</div>
 		</div>
-	  </section>
+	</section>
 
 	<!-- Footer -->
 	<footer id="footer" class="bg-dark">
@@ -204,28 +224,38 @@
 			<!-- Row -->
 			<div class="row">
 
-				<div class="col-md-12">
+				<div class="col-md-4">
 
-					<!-- footer logo -->
 					<div class="footer-logo">
 						<a href="index.html"><img src="img/logos/logo_relevo.png" alt="logo"></a>
 					</div>
-					<!-- /footer logo -->
-
-					<!-- footer follow -->
-					<ul class="footer-follow">
-						<li><a href="https://www.instagram.com/relevove/"><i class="fab fa-instagram"></i></a></li>
-					</ul>
-					<!-- /footer follow -->
-
-					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright © 2019</a></p>
+						<p>
+							Copyright © | 2019 Relevo Venezuela <br> 
+							Desarrollado por <a href="https://www.instagram.com/destriv.ve/">destriv.com</a>
+						</p>
 					</div>
-					<!-- /footer copyright -->
 
 				</div>
+				<div class="col-md-8">
 
+					<ul class="footer-follow">
+						<li><a href="https://www.instagram.com/relevove/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="mailto:relevovenezuela@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+					</ul>
+
+					<ul class="main-nav main-nav2 nav navbar-nav navbar-right">
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="galeria.html">Galería</a></li>
+						<li><a href="quienes.html">¿Quienes Somos?</a></li>
+						<li><a href="testimonio.html">Testimonios</a></li>
+						<li><a href="apoyanos.html">Apóyanos</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+
+				</div>
+					
+				
 			</div>
 			<!-- /Row -->
 
@@ -238,7 +268,7 @@
 	<!-- Back to top -->
 	<div id="back-to-top"></div>
 	<!-- /Back to top -->
- 
+
 
 	<!-- jQuery Plugins -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>

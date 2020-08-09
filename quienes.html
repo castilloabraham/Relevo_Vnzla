@@ -10,13 +10,13 @@
 
 	<script type="text/javascript">
 		window.addEventListener('load', function () {
-    		var preloader = document.getElementById('preloader');
-    		var wrapper = document.getElementById('wrapper');
-    		var preloadID = window.setInterval(function () {
-    	    document.body.removeChild(preloader);
-    	    wrapper.classList.add('display-show');
-    	    clearInterval(preloadID);
-    		}, 500);
+			var preloader = document.getElementById('preloader');
+			var wrapper = document.getElementById('wrapper');
+			var preloadID = window.setInterval(function () {
+				document.body.removeChild(preloader);
+				wrapper.classList.add('display-show');
+				clearInterval(preloadID);
+			}, 500);
 		});
 	</script>
 	<!-- Google font -->
@@ -42,7 +42,13 @@
 	</div>
 
 	<!-- Header -->
-	<header id="">
+	<header id="header-comun">
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('./img/background/testimonio.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
 		<!-- Nav -->
 		<nav id="nav" class="navbar nav-transparent">
 			<div class="container">
@@ -79,11 +85,19 @@
 		</nav>
 		<!-- /Nav -->
 
-
+		<div class="header-comun">
+			<div class="container">
+				<div class="row">
+					<div class="section-header text-center">
+						<h1 class="title">¿Quienes Somos?</h1>
+					</div>
+				</div>
+			</div>
+		</div>
 	</header>
 	<!-- /Header -->
 
-	<!-- Contact -->
+	<!--  -->
 	<div id="quienes" class="section md-padding">
 
 		<!-- Container -->
@@ -91,74 +105,164 @@
 
 			<!-- Row -->
 			<div class="row">
-
-				<!-- Section-header -->
-				<div class="section-header text-center">
-					<h2 class="title">¿Quienes Somos?</h2>
+				<!-- info quienes -->
+				<div class="col-md-6">
+					<div class="quienes">
+						<h3>Misión</h3>
+						<p>Somos una asociación civil dedicada a empoderar a jóvenes venezolanos de comunidades
+							vulnerables a través del acceso a oportunidades académicas y laborales. Brindamos
+							acompañamiento, formación y enlaces a quienes se convertirán en la generación de
+							relevo de nuestro país durante su recorrido por los estudios secundarios, superiores
+							y en el campo laboral. </p>
+					</div>
 				</div>
-				<!-- /Section-header -->
-                <div class="section-respuesta">
-                    <p>Relevo es una organización sin fines de lucro, que trabaja en la educación 
-							como herramienta para superar la pobreza</p>
-                </div>
+				<!-- /info quienes -->
+				<div class="vl hidden-xs"></div>
+				<hr class="vl2 visible-xs-block">
 
-				
+				<!-- info quienes -->
+				<div class="col-md-6">
+					<div class="quienes vision">
+						<h3>Visión</h3>
+						<p>Transformar radicalmente las expectativas de vida de nuestros alumnos,
+							ofreciendo mayores oportunidades de estudio, trabajo y de participación
+							en la comunidad.</p>
+					</div>
+				</div>
+				<!-- /info quienes -->
+
 			</div>
-            <!-- /Row -->
-    
+			<!-- /Row -->
+
 		</div>
 		<!-- /Container -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="sub-title">Nuestros valores</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="enunciado">
+						<a data-toggle="collapse" href="#valor1" aria-expanded="false" aria-controls="valor1">
+							<h3 class="title-valor"><i class="fas fa-paper-plane"></i>Sed de conocimiento</h3>
+						</a>
+					</div>
+					<p id="valor1" class="collapse valor-descrip">
+						Para nosotros, la educación y la formación suponen una auténtica necesidad, 
+						pues nos animan el espíritu investigador, es decir, las ansias de conocer y 
+						entender cada vez más el mundo que nos rodea.
+					</p>
+				</div>
+				<div class="col-md-4">
+					<div class="enunciado">
+						<a data-toggle="collapse" href="#valor2" aria-expanded="false" aria-controls="valor2">
+							<h3 class="title-valor"><i class="fas fa-paper-plane"></i>Pasión por el cambio</h3>
+						</a>
+					</div>
+					<p id="valor2" class="collapse valor-descrip">
+						Como jóvenes venezolanos, soñamos con un país donde las diferencias sociales se 
+						reduzcan, donde la educación de calidad sea accesible a todos los jóvenes, 
+						donde todos tengamos acceso a fuentes de trabajo dignas y donde todos pongamos 
+						nuestro granito de arena para apoyar a nuestras comunidades. Consideramos que 
+						esta transformación no es un evento futuro, sino una actividad del presente.
+					</p>
+				</div>
+				<div class="col-md-4">
+					<div class="enunciado">
+						<a data-toggle="collapse" href="#valor3" aria-expanded="false" aria-controls="valor3">
+							<h3 class="title-valor"><i class="fas fa-paper-plane"></i>Superación personal y colectiva</h3>
+						</a>
+					</div>
+					<p id="valor3" class="collapse valor-descrip">
+						Creemos que las preocupaciones individuales y las colectivas se encuentran estrechamente 
+						relacionadas, que la transformación de la sociedad comienza por el esfuerzo personal. 
+						Por lo tanto, apostamos por la formación académica y laboral de los jóvenes, con el 
+						objetivo de que adquieran las habilidades necesarias para mejorar su calidad de vida 
+						y la de su entorno.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="enunciado">
+						<a data-toggle="collapse" href="#valor4" aria-expanded="false" aria-controls="valor4">
+							<h3 class="title-valor"><i class="fas fa-paper-plane"></i>Networking</h3>
+						</a>
+					</div>
+					<p id="valor4" class="collapse valor-descrip">
+						Hemos aprendido que la creación de vínculos es clave para el acceso a mejores oportunidades, 
+						de manera que construimos relaciones basadas en la confianza y la colaboración con la intención 
+						de abrir nuevas puertas para alumnos, colaboradores y aliados.
+					</p>
+				</div>
+				<div class="col-md-4">
+					<div class="enunciado">
+						<a data-toggle="collapse" href="#valor5" aria-expanded="false" aria-controls="valor5">
+							<h3 class="title-valor"><i class="fas fa-paper-plane"></i>Creatividad</h3>
+						</a>
+					</div>
+					<p id="valor5" class="collapse valor-descrip">
+						No existe una única forma de hacer las cosas. Constantemente exploramos diversas alternativas 
+						para mejorar nuestro desempeño y acercarnos a nuestras aspiraciones, de acuerdo a las necesidades 
+						pero también a las oportunidades de nuestro entorno.
+					</p>
+				</div>
+				<div class="col-md-4">
+					<div class="enunciado">
+						<a data-toggle="collapse" href="#valor6" aria-expanded="false" aria-controls="valor6">
+							<h3 class="title-valor"><i class="fas fa-paper-plane"></i>Liderazgo transformacional</h3>
+						</a>
+					</div>
+					<p id="valor6" class="collapse valor-descrip">
+						La mejor forma de influir a los jóvenes es a través del ejemplo de otros jóvenes. Buscamos formar 
+						líderes proactivos, capaces de transformar positivamente a los demás y, así, generar una red de 
+						cambio masiva.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="enunciado">
+						<a data-toggle="collapse" href="#valor7" aria-expanded="false" aria-controls="valor7">
+							<h3 class="title-valor"><i class="fas fa-paper-plane"></i>Respeto</h3>
+						</a>
+					</div>
+					<p id="valor7" class="collapse valor-descrip">
+						Nuestras palabras y acciones tienen la capacidad de incidir sobre nuestra dignidad y la de los 
+						demás. A través de ellas debemos cuidar lo que hemos construido, así como también honrar el trabajo 
+						del otro.
+					</p>
+				</div>
+				<div class="col-md-4">
+					<div class="enunciado">
+						<a data-toggle="collapse" href="#valor8" aria-expanded="false" aria-controls="valor8">
+							<h3 class="title-valor"><i class="fas fa-paper-plane"></i>Sentido de pertenencia</h3>
+						</a>
+					</div>
+					<p id="valor8" class="collapse valor-descrip">
+						Nos reconocemos como parte de una comunidad. La empatía con el otro y el arraigo nos conducen a actuar 
+						conciliando la persecución de nuestras aspiraciones personales con el alivio de las necesidades que 
+						hallamos en nuestro entorno. Nos responsabilizamos por nosotros mismos y por los que vienen 
+						detrás, 
+						trazando caminos para la generación de relevo.</p>
+				</div>
+				<div class="col-md-4">
+					<div class="enunciado">
+						<a data-toggle="collapse" href="#valor9" aria-expanded="false" aria-controls="valor9">
+							<h3 class="title-valor"><i class="fas fa-paper-plane"></i>Perseverancia</h3>
+						</a>
+					</div>
+					<p id="valor9" class="collapse valor-descrip">
+						Entendemos que los logros no ocurren fácil ni rápidamente y asumimos el hábito de día a día realizar todo 
+						lo que está en nuestras manos para cumplir con nuestros propósitos.</p>
+				</div>
+			</div>
+		</div>
 
 	</div>
-    <!-- /Contact -->
-    
-    <!--  -->
-	<div id="quienes" class="section md-padding">
-
-            <!-- Container -->
-            <div class="container">
-    
-                <!-- Row -->
-                <div class="row">
-                    <!-- info quienes -->
-                    <div class="col-md-4">
-                        <div class="quienes">
-                            <h3>Misión</h3>
-                            <p>Desarrollar las capacidades de cada individuo que, mediante la buena relación 
-								con el entorno, la correcta interacción con la tecnología y el esfuerzo 
-								individual, lo ayuden a alcanzar sus aspiraciones personales.</p>
-                        </div>
-                    </div>
-                    <!-- /info quienes -->
-    
-                    <!-- info quienes -->
-                    <div class="col-md-4">
-                        <div class="quienes">
-                            <h3>Visión</h3>
-                            <p>Aumentar la cantidad de embajadores de cambio significativamente en 
-								comunidades de bajos recursos.</p>
-                        </div>
-                    </div>
-                    <!-- /info quienes -->
-    
-                    <!-- info quienes -->
-                    <div class="col-md-4">
-                        <div class="quienes">
-                            <h3>Proposito</h3>
-                            <p>Motivar a los jóvenes a través de la educación Incentivar el desarrollo intelectual 
-								y comunitario de manera sustentable.</p>
-                        </div>
-                    </div>
-                    <!-- /info quienes -->
-    
-                </div>
-                <!-- /Row -->
-    
-            </div>
-            <!-- /Container -->
-    
-        </div>
-        <!-- /About -->
+	<!-- /About -->
 
 	<!-- Footer -->
 	<footer id="footer" class="bg-dark">
@@ -169,28 +273,38 @@
 			<!-- Row -->
 			<div class="row">
 
-				<div class="col-md-12">
+				<div class="col-md-4">
 
-					<!-- footer logo -->
 					<div class="footer-logo">
 						<a href="index.html"><img src="img/logos/logo_relevo.png" alt="logo"></a>
 					</div>
-					<!-- /footer logo -->
-
-					<!-- footer follow -->
-					<ul class="footer-follow">
-						<li><a href="https://www.instagram.com/relevove/"><i class="fab fa-instagram"></i></a></li>
-					</ul>
-					<!-- /footer follow -->
-
-					<!-- footer copyright -->
 					<div class="footer-copyright">
-						<p>Copyright © 2019</a></p>
+						<p>
+							Copyright © | 2019 Relevo Venezuela <br> 
+							Desarrollado por <a href="https://www.instagram.com/destriv.ve/">destriv.com</a>
+						</p>
 					</div>
-					<!-- /footer copyright -->
 
 				</div>
+				<div class="col-md-8">
 
+					<ul class="footer-follow">
+						<li><a href="https://www.instagram.com/relevove/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="mailto:relevovenezuela@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+					</ul>
+
+					<ul class="main-nav main-nav2 nav navbar-nav navbar-right">
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="galeria.html">Galería</a></li>
+						<li><a href="quienes.html">¿Quienes Somos?</a></li>
+						<li><a href="testimonio.html">Testimonios</a></li>
+						<li><a href="apoyanos.html">Apóyanos</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+
+				</div>
+					
+				
 			</div>
 			<!-- /Row -->
 
@@ -203,7 +317,7 @@
 	<!-- Back to top -->
 	<div id="back-to-top"></div>
 	<!-- /Back to top -->
- 
+
 
 	<!-- jQuery Plugins -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
